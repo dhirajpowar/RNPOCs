@@ -72,3 +72,17 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Ignore VSCode settings unless shared workspace settings are intentional
+settings.json
+
+# Ignore generated Xcode workspace files
+*.xcworkspace
+contents.xcworkspacedata
+
+# Ignore CocoaPods lock file unless locking versions is required
+Podfile.lock
+
+# Ignore iOS privacy files
+*.xcprivacy
+
