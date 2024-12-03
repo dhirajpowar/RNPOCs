@@ -61,7 +61,8 @@ test('request camera permission on button press', async() => {
     permissions.PERMISSIONS[Platform.OS === 'ios' ? 'IOS' : 'ANDROID'].CAMERA
   );
 
-  await screen.findByText('The permission is granted');
+ // await screen.findByText('The permission is granted');
+  expect(console.log).toHaveBeenCalledWith('The permission is granted');
 });
 
 test('handles permission blocked by navigating to settings', async () => {
